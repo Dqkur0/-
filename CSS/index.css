@@ -4,3 +4,53 @@ font-weight: bold;
 color: red; }
 h2 {color:orangered;
 font-feature-settings: "abvm";}
+p.sub-title1{
+    color: orangered;
+}
+p#sub-title2{
+    color: violet;
+}
+.company{color: blue
+    ;
+font-size: large
+;
+} 
+div.box1{height: 100px;
+width: 100px;
+background-color: blueviolet;
+text-align: center;}
+div.box2{height: 100px;
+width: 100px;
+background-color: rgb(160, 7, 7);
+text-align: center;}
+div.box3{height: 100px;
+width: 100px;
+background-color: rgb(17, 189, 117);
+text-align: center;}
+.arrow_box {
+	position: relative;
+	background: #2f339c;
+	border: 30px solid #f2f593;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(53, 59, 213, 0);
+	border-top-color: #0d28c0;
+	border-width: 50px;
+	margin-left: -50px;
+}
+.arrow_box:before {
+	border-color: rgba(242, 245, 147, 0);
+	border-top-color: #f2f593;
+	border-width: 92px;
+	margin-left: -92px;
