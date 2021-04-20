@@ -1,0 +1,6 @@
+h1 {font-style:oblique;
+font-size: 50pt;
+font-weight: bold;
+color: red; }
+h2 {color:orangered;
+font-feature-settings: "abvm";}
