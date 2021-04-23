@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta content="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>自己紹介</title> 
+        <style type="text/css">
+        html{
+            scroll-behavior: smooth;
+        }
+body {
+	background-image: url("mikonos2540.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+   
+}
+
+  /* ここから見出しタブ      */
+        h1 {
+            font-size: 2pc;
+            display: flex;
+        }
+        h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:  70px;
+    color: rgb(209, 74, 33);
+    display:flex;
+    float: left;
+}
+        #Htag {
+            font-size: 100px;
+        }
+
+        *, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.menu {
+	display: block;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	margin: 30px auto;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	background-color: #1b2538;
+}
+.menu div.menubar {
+	width: 30px;
+	margin: 17px auto;
+}
+.menu div.menubar .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	margin-top: 3px;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+	opacity: 0;
+}
+.menu ul li {
+	display: inline-block;
+}
+.menu ul li a {
+	display: inline-block;
+	padding: 0.7em 0.5em;
+	-webkit-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+	text-decoration: none;
+	color: #1b2538;
+	border-bottom: 4px solid transparent;
+	height: 56px;
+	line-height: 2em;
+}
+.menu ul li a:hover {
+	color: #ffffff;
+	background-color: #1b2538;
+}
+.menu ul li a:target {
+	border-bottom-color: #1b2538;
+}
+/* クリックした時の動き */
+#cp_navimenuid {
+	display: none;
+}
+#cp_navimenuid:checked ~ .menu {
+	width: 100%;
+	height: 60px;
+	border: 3px solid #1b2538;
+	border-radius: 5px;
+	background-color: transparent;
+}
+#cp_navimenuid:checked ~ .menu > ul {
+	display: block;
+	opacity: 1;
+}
+#cp_navimenuid:checked ~ .menu > .menubar {
+	display: none;
+}
+div.class {
+     font-size: 20px;
+}
+
+
+
+
+
+#profileBox {
+    background-color: lightblue;
+    scroll-behavior: smooth;
+    font-size: 100px;
+    height: 500pt;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+
+    
+}
+.liname {
+    font-size: 30px;
+    float: right;
+}
+
+
+
+            
+       
+     
+        </style>
+    </head>
+    
+    <body>
+        
+
+    <input type="checkbox" id="cp_navimenuid">
+<label class="menu" for="cp_navimenuid">
+
+<div class="menubar">
+	<span class="bar"></span>
+	<span class="bar"></span>
+	<span class="bar"></span>
+</div>
+
+<ul>
+	<li><a id="home" href="#home">Home</a></li>
+	<li><a id="profile" href="#profileBox">Profile</a></li>
+	<li><a id="about" href="#about">About</a></li>
+	<li><a id="contact" href="#contact">Contact</a></li>
+</ul>
+
+</label>
+  
+        <h1>自己紹介サイト</h1>
+<h2 >Nice to meet you. <br>Welcome!</h2>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div id="profileBox"> 
+
+        私について
+        
+            <li class =liname>
+              こんにちわ私の名前は黒田翔仁です。
+            </li>
+       
+     </h3>
+</div>
+
+
+
+
+
+            
+
+
+
+ 
+
+<script>
+    window.sr= new scrollReveal();
+    sr.reveal('#profileBox');
+</script>
+
+
+<script type="text/javascript" src="scrollreveal.min.js"></script>
+    </body>
+</html>

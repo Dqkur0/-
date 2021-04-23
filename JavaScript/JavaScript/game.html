@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta content="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>テスト</title>  
+        <style type="text/css">
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+          .box {
+              width: 100px;
+              height: 100px;
+              background-color: rgb(0, 248, 236);
+              margin: 0 8px 8px 0;
+              cursor: pointer;
+              transition: 0.8s;
+              line-height: 100px;
+              text-align: center;
+          }
+          .hit {
+              border-radius: 50%;
+              background-color: blueviolet;
+              transform: rotate(360deg) ;
+              
+          }
+          .lose {
+              transform: scale(0.9);
+          }
+        </style> 
+    </head>    
+          <body>
+              <!-- <div class = "box"  id="target1"></div>
+              <div class = "box"  id="target2"></div>
+              <div class = "box"  id="target3"></div> -->
+              <script>
+                  'use strict';
+                    const num =5;
+                    const hit= Math.floor(Math.random() * num); //0-4
+
+                  for (let i =0; i <num;i++){
+                      const div =document.createElement('div');
+                      div.classList.add('box');
+                      document.body.appendChild(div);
+                      
+                      div.addEventListener('click', () => {
+                          if(i === hit) {
+                              div.textContent = '当たり！';
+                              div.classList.add('hit');
+                          } else {
+                               div.textContent= 'はずれ！';
+                               div.classList.add('lose');
+                          }
+                      });
+                  }
+
+                //   for(let i =0; i<100;i++){
+                //  const div =document.createElement('div');
+                //  div.classList.add('box');
+                //  document.body.appendChild(div);
+                //  div.textContent = i + 1;
+                //  div.addEventListener('click', () => {
+                //      div.classList.toggle('circle');
+                //      });
+                // }
+
+
+
+                //   const target1 = document.getElementById('target1');
+                //   const target2 = document.getElementById('target2');
+                //   const target3 = document.getElementById('target3');
+                   
+                //   target1.addEventListener('click', () => {
+                //       target1.classList.toggle('circle');
+                //       });
+                // 　target2.addEventListener('click', () => {
+                //       target2.classList.toggle('circle');
+                //       });
+                // 　 target3.addEventListener('click', () => {
+                //       target3.classList.toggle('circle');
+                //       });
+              </script>
+       
+    </body>
+</html>
