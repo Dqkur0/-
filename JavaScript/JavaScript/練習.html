@@ -164,6 +164,7 @@ p {
   bottom: 0;
   background: #ef3f98;
   opacity: 0.6;
+  z-index: 3;
 }
 #page_top a{
   position: relative;
@@ -171,6 +172,7 @@ p {
   width: 100px;
   height: 60px;
   text-decoration: none;
+  z-index: 3;
 }
 #page_top a::before{
   font-family: 'Font Awesome 5 Free';
@@ -187,6 +189,7 @@ p {
   left: 30px;
   margin: auto;
   text-align: center;
+  z-index: 3;
 }
 #page_top a::after{
   content: 'PAGE TOP';
@@ -199,6 +202,7 @@ p {
   left: 30px;
   margin: 5px;
   text-align:center;
+  z-index: 3;
 }
 .Positive-img {
 	float:right;
@@ -236,6 +240,10 @@ border-radius: 10px;
 .swimmer {
   float: right;
 }
+.Guiter{
+  float: right;
+  transform: rotate(5deg);
+}
 
 </style>
 </head>
@@ -253,7 +261,7 @@ border-radius: 10px;
 	 <li><a id="home" href="#home">Home</a></li>
   	<li><a id="profile" href="#profileBox">Profile</a></li>
 	 <li><a id="Favorite" href="#Favoritebox">Favorite</a></li>
-	 <li><a id="contact" href="#contact">Contact</a></li>
+	 <li><a id="Students" href="#Studentsbox">StudentsDays</a></li>
 </ul>
 </label>
 
@@ -298,7 +306,14 @@ border-radius: 10px;
 
 <div id = Studentsbox>　
   <h2>Students Days</h2>
-   <p>・学生時代、自分は</p>
+  <img src="music_hikigatari_stand_man.png.png" height="400px" width="400xp" alt="弾き語り" class="Guiter">
+   <p>・<span style="text-decoration: underline">高校学生時代、</span>自分はギター部に所属しており、文化祭で弾き語りなどをしました。</p>
+   <p>人の前で何かを披露するのは初めてでとても緊張しましたが、人前で歌ったりするのが楽しいという気持ちが少しわかりました。</p>
+   <p>・<span style="text-decoration: underline">専門学生時代では</span>ライブのPAと言って音響機器を使って音の様々な調整を行う役割を行っていました。</p>
+   <p>そのなかでアーティストさんを呼んで実際にお客さんを入れてライブなどを行っていました。とてもハードで大変ですがとてもとてもやりがいがありました。</p>
+   <img src="" alt="">
+   <p>普段テレビでもライブでも誰かを引き立たせる催しを行う時など、<span style="text-decoration: underline">裏の人たちがすごく頑張っているからこその面白さやすごさ</span>があるんだなと思いました。</p>
+   <p>その道には進まなかったけど、裏の人を経験して裏の人の大事さを改めて感じました。</p>
 </div>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
@@ -309,6 +324,6 @@ border-radius: 10px;
 
 
 
-<script type="text/javascript" src="scrollreveal.min.js"></script>
+
     </body>
 </html>
