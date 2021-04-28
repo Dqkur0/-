@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta content="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>自己紹介</title> 
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <code><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script></code>
+
+
+<style type="text/css">
+
+html{
+ position: relative;
+ scroll-behavior: smooth;
+}
+
+
+body {
+ font-family: 'Merienda', cursive;
+}
+
+
+h1 {
+ font-size: 150px;
+ color:rgb(255, 166, 0);
+ border-bottom:dotted  20px rgb(223, 30, 30);
+ z-index: 3;
+ position:relative;
+ width: 100%;
+ height: auto;
+ font-size: 6vmax;
+}
+h2 {
+  font-size: 120px;
+  color: black;
+  border-bottom: 5px double black;
+}
+
+
+/* 　メニューバー */
+header {
+  background: #333;
+  position: relative;
+  width: 100%;
+  left: -7px;
+  padding: .5rem;
+  text-align: right;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+li {
+  margin: 2rem 0;
+}
+
+/* メニューボタン */
+.btn-menu {
+  border: 1px solid #999;
+  background: transparent;
+  color: #fff;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 6;
+}
+
+/* メニュー */
+nav {
+  background: #0bd;
+  position: absolute;
+  z-index: 1;
+  top: 3.125rem;
+  right: 0;
+  overflow-x: hidden;
+  text-align: center;
+  width: 0;
+  transition: .5s;
+  z-index: 6;
+}
+/* メニューを開いたとき */
+nav.open-menu {
+  width: 100%;
+  z-index: 6;
+}
+
+
+
+
+div#ProfileBox {
+   margin-left: auto;
+   margin-right: auto;
+  border: 10px ridge royalblue;
+    background-color: lightblue;
+    scroll-behavior: smooth;
+    height:auto;
+    width: 60vw;
+    top:300px;
+    left:0;
+    z-index: 2;
+    position: relative;
+}
+div#Favoritebox{
+  margin-left: auto;
+   margin-right: auto;
+  border: 10px ridge gray ;
+  background-color:rgb(236, 178, 71) ;
+  scroll-behavior: smooth;
+  height:auto;
+  width:70vw;
+  top:1000px;
+  position: relative;
+  z-index: 2;
+}
+div#Studentsbox{
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px ridge bisque;
+  background-color: palegreen;
+  width: 70vw;
+  height: auto;
+  scroll-behavior: smooth;
+  top:1900px;
+  z-index: 2;
+  position: relative;
+}
+p {
+  font-size: 4vh;
+}
+footer{
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  background-color: gray;
+  left: 0;
+  color: #ffffff;
+  font-size: 150px;
+  text-align: center;
+  padding-top: 50px;
+  bottom: -2500px;
+  z-index: 4;
+}
+
+/* ページトップに戻る */
+#page_top{
+  width: 140px;
+  height: 100px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #ef3f98;
+  opacity: 0.6;
+  z-index: 99;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+  z-index: 99;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -20px;
+  bottom: 0;
+  right: 0;
+  left: 30px;
+  margin: auto;
+  text-align: center;
+  z-index: 99;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 10px;
+  margin: 5px;
+  text-align:center;
+  z-index: 99;
+}
+
+
+/* 画像に関して */
+.Positive-img {
+	float:right;
+	border: 10px,black;
+	left: 10px;
+	right: auto;
+}
+.Hashiru {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  transform: rotate(-10deg);
+  width: 20vw;
+  height: auto;
+  position: relative;
+  top: 500px;
+  z-index: 1;
+}
+.Hashiru2{
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  transform: rotate(10deg);
+  width: 20vw;
+  height: auto;
+  position: relative;
+  top: 500px;
+  z-index: 1;
+}
+.Naruto{ 
+float: right;
+transform: rotate(5deg);
+border-radius: 10px;
+}
+.Onepeace{
+  float:right;
+  transform: rotate(-5deg);
+  border-radius: 10px;
+}
+.Runner {
+  float: right;
+}
+.swimmer {
+  float: right;
+}
+.Guiter{
+  float: right;
+  transform: rotate(5deg);
+}
+.PA {
+  float: right;
+}
+.Onepiece_luffy {
+  float: right;
+  width: 30vw;
+  height: auto;
+  position: relative;
+  top: 1300px;
+  z-index: 1;
+}
+.Onepiece_enel{
+  float: left;
+  width: 30vw;
+  height: auto;
+  position: relative;
+  top: 1300px;
+  z-index: 1;
+}
+
+/* ロード画面 */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #0bd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+/* Loading Animation */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merienda');s
+a {
+  color: rgb(15, 15, 15);
+}
+
+</style>
+</head>
+<body>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<div id="page_top"><a href="#"></a>
+</div>
+
+<div id="loading">
+<div class="spinner"></div>
+
+  </div>  
+<header>
+    <button class="btn-menu">メニュー</button>
+   <nav>
+    <ul>
+      <P><a href="#home"><span style="text-decoration: underline">Home</span></a></p>
+      <p><a href="#ProfileBox"><span style="text-decoration: underline">My Profile</span></a></p>
+      <p><a href="#Favoritebox"><span style="text-decoration: underline">My Favorite</span></a></p>
+      <p><a href="#Studentsbox"><span style="text-decoration: underline">Students Days</span></a></p>
+    </ul>
+  </nav>
+</header>
+
+<h1 id = home> Hello!<br>Nice to meet you. <br>Welcome!</h1>
+  
+<div id="ProfileBox" data-aos="zoom-in"data-aos-duration="800" data-aos-offset="600">      
+  <h2 >My Prolile</h2>
+   <img src="kimochi_positive_man.png" height="300px" width="300px" alt="ポジティブな人" class="Positive-img">
+   <p>・こんにちわ！初めまして私の名前は黒田 翔仁です。2001年3月27日生まれ。今年20歳です。</p>
+   <p> 簡単に自己紹介をしようと思います。私は、人によく「なやみが少なそう」といわれるくらいポジティブなところがあります。</p>
+   <p>趣味や学生生活の際、なにをしてきたのかなどを紹介していきます。</p>
+</div>
+
+
+<div data-aos="fade-up-right" data-aos-offset="700" data-aos-duration="800" >
+  <img src="hashiru_boy.png" height="auto" width="auto"  alt="走っている人" class="Hashiru" >
+</div>
+<div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-offset="700" data-aos-duration="800">
+  <img src="pose_hashiru_guruguru_woman.png" height="auto" width="auto"  alt=""  class="Hashiru2">
+</div>
+
+<div id =Favoritebox data-aos="zoom-out-up" data-aos-offset="500" data-aos-duration="800" >
+  <h2>My Favorite</h2>
+   <img src="naruto1.png" height="300px" width="500px" alt="" class="Naruto">
+     <p>・自分の趣味を紹介します。自分の趣味は漫画などをみることです</p>
+     <p>自分の一番好きな漫画はワンピースとナルトです。ワンピースやナルトは漫画やアニメが苦手な人からするとわからないかもしれませんが</p>
+     <p>自分はナルトを見て、<span style="text-decoration: underline">何があっても譲らない信念を持つ大切さ、あきらめない大切さ</span>などが学べました。</p>
+     <p>ワンピースを見て、<span style="text-decoration: underline">仲間の大切さ、何事も全力で楽しむこと</span>などを学びました。</p>
+     <img src="onepeace.png" height="300px" width="500px" alt="" class="Onepeace">
+     <p>自分の主観ですが、漫画やアニメを見ることが時間の無駄だと思うことがあるかもしれませんが</p>
+     <p>漫画やアニメからはたくさんのことを学ぶことができます。よかったら見てほしいです。</p>
+     <p>最近の漫画では、東京卍リベンジャーズがおすすめです。</p>
+   <h2>特技</h2>
+   <img src="sports_run_syoumen_man.png" height="300px" width="170px" alt="走っている人" class="Runner" >
+     <p>・自分の特技は、走ることと、泳ぐことです。</p>
+     <p>少し前に本気で痩せたくなり走っているうちに走れる距離が5km、10km、と伸び20kmまで何気なく走れるようになりました。</p>
+     <img src="swimming_butterfly.png" height="200px" width="250px" alt="泳いでいる人" class="swimmer" >
+     <p>それから長距離を走ることがとても楽しくなり、特技と言えるようになりました。</p>
+     <p>水泳に関しては  、6年間やっている中で早く泳げるようになり毎年夏を楽しみにしています。</p>
+     <br><br>
+</div>
+
+<div data-aos="fade-right" data-aos-offset="1700" data-aos-duration="800">
+  <img src="onepiece01_luffy.png" alt="ルフィ" class=Onepiece_luffy  >　
+</div>
+<div  data-aos="fade-left" data-aos-offset="1800" data-aos-duration="800" >
+  <img src="onepiece14_enel.png" alt="" class="Onepiece_enel">
+</div>
+
+
+<div id =Studentsbox  data-aos="fade-left" data-aos-offset="300" data-aos-duration="800" >　
+  <h2>Students Days</h2>
+  <img src="music_hikigatari_stand_man.png.png" height="400px" width="400xp" alt="弾き語り" class="Guiter">
+   <p>・<span style="text-decoration: underline">高校学生時代、</span>自分はギター部に所属しており、文化祭で弾き語りなどをしました。</p>
+   <p>人の前で何かを披露するのは初めてでとても緊張しましたが、人前で歌ったりするのが楽しいという気持ちが少しわかりました。</p>
+   <img src="job_pa_mixer.png" height="400px" width="400px" alt="音響さん" class="PA" >
+   <p>・<span style="text-decoration: underline">専門学生時代では</span>ライブのPAと言って音響機器を使って音の様々な調整を行う役割を行っていました。</p>
+   <p>そのなかでアーティストさんを呼んで実際にお客さんを入れてライブなどを行っていました。とてもハードで大変ですがとてもとてもやりがいがありました。</p>
+   <p>普段テレビでもライブでも誰かを引き立たせる催しを行う時など、<span style="text-decoration: underline">裏の人たちがすごく頑張っているからこその面白さやすごさ</span>があるんだなと思いました。</p>
+   <p>その道には進まなかったけど、裏の人を経験して裏の人の大事さを改めて感じました。</p>
+</div>
+
+<footer>
+   END
+</footer>
+
+
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+<script>
+  'use strict'
+  AOS.init();
+  window.onload = function() {
+  const spinner = document.getElementById('loading');
+ 
+  spinner.classList.add('loaded');
+}
+const btn = document.querySelector('.btn-menu');
+const nav = document.querySelector('nav');
+
+btn.addEventListener('click', () => {
+  nav.classList.toggle('open-menu')
+   if (btn.innerHTML === 'メニュー') {
+     btn.innerHTML = '閉じる';
+   } else {
+     btn.innerHTML = 'メニュー';
+   }
+});
+
+
+bubbly({
+  colorStart: '#fff4e6',
+  colorStop: '#ffe9e4',
+  blur: 1,
+  compose: 'source-over',
+  bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+});
+</script>
+
+</body>
+</html>
