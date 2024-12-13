@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta content="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>自己紹介</title> 
+        <style type="text/css">
+        html{
+            scroll-behavior: smooth;
+        }
+body {
+	background-image: url("mikonos2540.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+  /* ここから見出しタブ      */
+h1 {
+ font-size: 120px;
+ color:rgb(255, 166, 0);
+  }
+h2 {
+  font-size: 120px;
+  color: black;
+  border-bottom: double 5px #000000;
+}
+
+
+        *, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.menu {
+	display: block;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	margin: 30px auto;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+	border: 3px solid transparent;
+	border-radius: 50%;
+	background-color: #1b2538;
+	
+}
+.menu div.menubar {
+	width: 30px;
+	margin: 17px auto;
+	
+}
+.menu div.menubar .bar {
+	display: block;
+	width: 100%;
+	height: 5px;
+	margin-top: 3px;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+.menu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+	opacity: 0;
+}
+.menu ul li {
+	display: inline-block;
+}
+.menu ul li a {
+	display: inline-block;
+	padding: 0.7em 0.5em;
+	-webkit-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+	text-decoration: none;
+	color: #1b2538;
+	border-bottom: 4px solid transparent;
+	height: 56px;
+	line-height: 2em;
+}
+.menu ul li a:hover {
+	color: #ffffff;
+	background-color: #1b2538;
+}
+.menu ul li a:target {
+	border-bottom-color: #1b2538;
+}
+
+#cp_navimenuid {
+	display: none;
+}
+#cp_navimenuid:checked ~ .menu {
+	width: 100%;
+	height: 60px;
+	border: 3px solid #1b2538;
+	border-radius: 5px;
+	background-color: transparent;
+}
+#cp_navimenuid:checked ~ .menu > ul {
+	display: block;
+	opacity: 1;
+}
+#cp_navimenuid:checked ~ .menu > .menubar {
+	display: none;
+}
+div.class {
+     font-size: 20px;
+}
+
+
+
+
+
+#profileBox {
+    background-color: lightblue;
+    scroll-behavior: smooth;
+    height:1500px;
+    position: absolute;
+    width: 100%;
+    top:1200px
+}
+#Favoritebox{
+  background-color:rgb(236, 178, 71) ;
+  scroll-behavior: smooth;
+  height: auto;
+  width:100%;
+  position: absolute;
+  top:3000px;
+  z-index: 2;
+}
+#Studentsbox{
+  background-color: palegreen;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  scroll-behavior: smooth;
+  top:6000px;
+  z-index: 2;
+}
+
+p {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+#page_top{
+  width: 140px;
+  height: 100px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #ef3f98;
+  opacity: 0.6;
+  z-index: 3;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+  z-index: 3;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -25px;
+  bottom: 0;
+  right: 0;
+  left: 30px;
+  margin: auto;
+  text-align: center;
+  z-index: 3;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 30px;
+  margin: 5px;
+  text-align:center;
+  z-index: 3;
+}
+.Positive-img {
+	float:right;
+	border: 10px,black;
+	left: 10px;
+	right: auto;
+}
+.Mountain {
+  width: auto;
+  height: auto;
+  position:relative;
+  top:1300px;
+}
+.Forest{
+  width: auto;
+  height: auto;
+  position:relative;
+  top:2600px;
+  z-index: 1;
+}
+.Naruto{ 
+float: right;
+transform: rotate(5deg);
+border-radius: 10px;
+
+}
+.Onepeace{
+  float:right;
+  transform: rotate(-5deg);
+  border-radius: 10px;
+}
+.Runner {
+  float: right;
+}
+.swimmer {
+  float: right;
+}
+.Guiter{
+  float: right;
+  transform: rotate(5deg);
+}
+
+</style>
+</head>
+<body>
+  <input type="checkbox" id="cp_navimenuid">
+<label class="menu" for="cp_navimenuid">
+
+    <div class="menubar">
+	    <span class="bar"></span>
+	    <span class="bar"></span>
+	    <span class="bar"></span>
+    </div>
+
+<ul>
+	 <li><a id="home" href="#home">Home</a></li>
+  	<li><a id="profile" href="#profileBox">Profile</a></li>
+	 <li><a id="Favorite" href="#Favoritebox">Favorite</a></li>
+	 <li><a id="Students" href="#Studentsbox">StudentsDays</a></li>
+</ul>
+</label>
+
+<h1>Hello!<br>Nice to meet you. <br>Welcome!</h1>
+
+<div id="profileBox">      
+  <h2>My Prolile</h2>
+  　<img src="kimochi_positive_man.png" height="400px" width="400px" alt="ポジティブな人" class="Positive-img">
+   <p>・こんにちわ！初めまして私の名前は黒田 翔仁です。2001年3月27日生まれ。今年20歳です。</p>
+   <p> 簡単に自己紹介をしようと思います。私は、人によく「なやみが少なそう」といわれるくらいポジティブなところがあります。</p>
+   <p>趣味や学生生活の際、なにをしてきたのかなどを紹介していきます。</p>
+</div>
+
+<div>
+  <img src="mountain_00002.jpg" height="auto" width="auto"  alt="山の画像" class="Mountain" >
+</div>
+
+<div id = Favoritebox>
+   <h2>My Favorite</h2>
+   <img src="naruto1.png" height="300px" width="500px" alt="" class="Naruto">
+     <p>・自分の趣味を紹介します。自分の趣味は漫画などをみることです</p>
+     <p>自分の一番好きな漫画はワンピースとナルトです。ワンピースやナルトは漫画やアニメが苦手な人からするとわからないかもしれませんが</p>
+     <p>自分はナルトを見て、<span style="text-decoration: underline">何があっても譲らない信念を持つ大切さ、あきらめない大切さ</span>などが学べました。</p>
+     <p>ワンピースを見て、<span style="text-decoration: underline">仲間の大切さ、何事も全力で楽しむこと</span>などを学びました。</p>
+     <img src="onepeace.png" height="300px" width="500px" alt="" class="Onepeace">
+     <p>自分の主観ですが、漫画やアニメを見ることが時間の無駄だと思うことがあるかもしれませんが</p>
+     <p>漫画やアニメからはたくさんのことを学ぶことができます。よかったら見てほしいです。</p>
+     <p>最近の漫画では、東京卍リベンジャーズがおすすめです。</p>
+   <h2>特技</h2>
+
+   <img src="sports_run_syoumen_man.png" height="350px" width="200px" alt="走っている人" class="Runner" >
+     <p>・自分の特技は、走ることと、泳ぐことです。</p>
+     <p>少し前に本気で痩せたくなり走っているうちに走れる距離が5km、10km、と伸び20kmまで何気なく走れるようになりました。</p>
+     <p>それから長距離を走ることがとても楽しくなり、特技と言えるようになりました。</p>
+     <img src="swimming_butterfly.png" height="250px" width="300px" alt="泳いでいる人" class="swimmer" >
+     <p>水泳に関しては、6年間やっている中で早く泳げるようになり毎年夏を楽しみにしています。</p>
+</div>
+
+<div>
+  <img src="japanese-style_00022.jpg" height="auto" width="auto" alt="" class="Forest">  
+</div>
+
+<div id = Studentsbox>　
+  <h2>Students Days</h2>
+  <img src="music_hikigatari_stand_man.png.png" height="400px" width="400xp" alt="弾き語り" class="Guiter">
+   <p>・<span style="text-decoration: underline">高校学生時代、</span>自分はギター部に所属しており、文化祭で弾き語りなどをしました。</p>
+   <p>人の前で何かを披露するのは初めてでとても緊張しましたが、人前で歌ったりするのが楽しいという気持ちが少しわかりました。</p>
+   <p>・<span style="text-decoration: underline">専門学生時代では</span>ライブのPAと言って音響機器を使って音の様々な調整を行う役割を行っていました。</p>
+   <p>そのなかでアーティストさんを呼んで実際にお客さんを入れてライブなどを行っていました。とてもハードで大変ですがとてもとてもやりがいがありました。</p>
+   <img src="" alt="">
+   <p>普段テレビでもライブでも誰かを引き立たせる催しを行う時など、<span style="text-decoration: underline">裏の人たちがすごく頑張っているからこその面白さやすごさ</span>があるんだなと思いました。</p>
+   <p>その道には進まなかったけど、裏の人を経験して裏の人の大事さを改めて感じました。</p>
+</div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+<div id="page_top"><a href="#"></a>
+</div>
+
+
+
+
+
+
+    </body>
+</html>
